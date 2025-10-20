@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-droup23 - Realizing Civilization's Potential</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .mission-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .mission-title {
+            font-size: 2.5em;
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .mission-text {
+            font-size: 1.3em;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #444;
+            font-weight: 300;
+        }
+
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .principle-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .principle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .principle-title {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .principle-desc {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 60px 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            color: white;
+        }
+
+        .cta-title {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cta-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(238, 90, 36, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(238, 90, 36, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .tagline {
+                font-size: 1.2em;
+            }
+
+            .mission-title {
+                font-size: 2em;
+            }
+
+            .mission-text {
+                font-size: 1.1em;
+            }
+
+            .principles {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .mission-section, .cta-section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>test-droup23</h1>
+            <div class="tagline">Realizing the Full Potential of Our Civilization</div>
+        </header>
+
+        <section class="mission-section">
+            <h2 class="mission-title">Our Mission</h2>
+            <p class="mission-text">
+                We exist to realize the full potential of our civilization through technological innovation, 
+                collaborative intelligence, and human-AI partnership. Our work accelerates humanity's progress 
+                toward a future where technology amplifies human potential, solves civilization-level challenges, 
+                and creates sustainable abundance for all.
+            </p>
+
+            <div class="principles">
+                <div class="principle-card">
+                    <h3 class="principle-title">Human-Centric Progress</h3>
+                    <p class="principle-desc">
+                        All technological advancement must serve human flourishing, preserving and enhancing 
+                        human agency, creativity, and connection while ensuring equitable access to progress.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h3 class="principle-title">Collaborative Intelligence</h3>
+                    <p class="principle-desc">
+                        We foster symbiotic relationships between human and artificial intelligence, valuing 
+                        diverse perspectives and building systems that amplify human potential.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h3 class="principle-title">Ethical Innovation</h3>
+                    <p class="principle-desc">
+                        We prioritize safety, transparency, and accountability, considering long-term consequences 
+                        while maintaining alignment with human values and wellbeing.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h3 class="principle-title">Global Stewardship</h3>
+                    <p class="principle-desc">
+                        We address civilization-level challenges through coordinated action, balancing technological 
+                        progress with environmental sustainability and promoting global cooperation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2 class="cta-title">Join the Movement</h2>
+            <p class="cta-subtitle">
+                Be part of the next chapter in human civilization's story
+            </p>
+            <a href="https://github.com/simbiot-ai/-4916758271-public" class="cta-button">
+                View Our Work
+            </a>
+        </section>
+
+        <footer class="footer">
+            <p>
+                © 2025 test-droup23 | 
+                <a href="https://github.com/simbiot-ai/-4916758271-public/constitution.md">Constitution</a> | 
+                <a href="https://github.com/simbiot-ai/-4916758271-public">GitHub</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
