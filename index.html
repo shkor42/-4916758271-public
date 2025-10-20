@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test-droup23 - Realizing Civilization's Potential</title>
+    <title>test-droup23 | Realizing Civilization's Potential</title>
+    <meta name="description" content="Advancing human potential through technological innovation and human-AI collaboration">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,9 +14,9 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #1a1a1a;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
@@ -22,171 +24,160 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 2rem;
         }
 
         header {
             text-align: center;
-            padding: 60px 20px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            margin-bottom: 40px;
+            padding: 4rem 0;
             color: white;
         }
 
-        h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
+        .logo {
+            font-size: 3rem;
             font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .tagline {
-            font-size: 1.4em;
-            margin-bottom: 30px;
-            opacity: 0.9;
+            font-size: 1.2rem;
             font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 2rem;
         }
 
-        .mission-section {
+        .mission {
             background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             border-radius: 20px;
-            padding: 60px 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 3rem;
+            margin: 2rem 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        .mission-title {
-            font-size: 2.5em;
-            color: #667eea;
-            text-align: center;
-            margin-bottom: 30px;
-            font-weight: 600;
+        .mission h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
 
-        .mission-text {
-            font-size: 1.3em;
-            line-height: 1.8;
-            text-align: center;
+        .mission p {
+            font-size: 1.3rem;
+            color: #666;
             max-width: 800px;
             margin: 0 auto;
-            color: #444;
-            font-weight: 300;
+            line-height: 1.8;
         }
 
         .principles {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
         }
 
         .principle-card {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 2rem;
+            text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .principle-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
-        .principle-title {
-            font-size: 1.4em;
+        .principle-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .principle-card h3 {
+            font-size: 1.3rem;
             color: #333;
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
             font-weight: 600;
         }
 
-        .principle-desc {
+        .principle-card p {
             color: #666;
             line-height: 1.6;
         }
 
         .cta-section {
             text-align: center;
-            padding: 60px 40px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            color: white;
-        }
-
-        .cta-title {
-            font-size: 2.2em;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .cta-subtitle {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            opacity: 0.9;
+            margin: 4rem 0;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 15px 40px;
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            text-decoration: none;
+            padding: 1rem 2rem;
             border-radius: 50px;
+            text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(238, 90, 36, 0.3);
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
         }
 
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(238, 90, 36, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
         }
 
-        .footer {
+        footer {
             text-align: center;
-            padding: 40px 20px;
+            padding: 2rem;
             color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9em;
         }
 
-        .footer a {
+        .footer-links {
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
             color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
         }
 
-        .footer a:hover {
+        .footer-links a:hover {
+            color: white;
             text-decoration: underline;
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
+            .container {
+                padding: 1rem;
             }
 
-            .tagline {
-                font-size: 1.2em;
+            .logo {
+                font-size: 2rem;
             }
 
-            .mission-title {
-                font-size: 2em;
+            .mission h1 {
+                font-size: 2rem;
             }
 
-            .mission-text {
-                font-size: 1.1em;
+            .mission p {
+                font-size: 1.1rem;
             }
 
             .principles {
                 grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .mission-section, .cta-section {
-                padding: 40px 20px;
             }
         }
     </style>
@@ -194,70 +185,53 @@
 <body>
     <div class="container">
         <header>
-            <h1>test-droup23</h1>
-            <div class="tagline">Realizing the Full Potential of Our Civilization</div>
+            <div class="logo">test-droup23</div>
+            <div class="tagline">Human-AI Partnership for Civilization-Level Progress</div>
         </header>
 
-        <section class="mission-section">
-            <h2 class="mission-title">Our Mission</h2>
-            <p class="mission-text">
-                We exist to realize the full potential of our civilization through technological innovation, 
-                collaborative intelligence, and human-AI partnership. Our work accelerates humanity's progress 
-                toward a future where technology amplifies human potential, solves civilization-level challenges, 
-                and creates sustainable abundance for all.
-            </p>
+        <section class="mission">
+            <h1>Our Mission</h1>
+            <p>To realize the full potential of our civilization through technological innovation, collaborative intelligence, and human-AI partnership.</p>
+        </section>
 
-            <div class="principles">
-                <div class="principle-card">
-                    <h3 class="principle-title">Human-Centric Progress</h3>
-                    <p class="principle-desc">
-                        All technological advancement must serve human flourishing, preserving and enhancing 
-                        human agency, creativity, and connection while ensuring equitable access to progress.
-                    </p>
-                </div>
+        <section class="principles">
+            <div class="principle-card">
+                <div class="principle-icon">🧠</div>
+                <h3>Human-Centric Progress</h3>
+                <p>We amplify human potential, creativity, and flourishing through technology that serves humanity's greatest aspirations.</p>
+            </div>
 
-                <div class="principle-card">
-                    <h3 class="principle-title">Collaborative Intelligence</h3>
-                    <p class="principle-desc">
-                        We foster symbiotic relationships between human and artificial intelligence, valuing 
-                        diverse perspectives and building systems that amplify human potential.
-                    </p>
-                </div>
+            <div class="principle-card">
+                <div class="principle-icon">🤝</div>
+                <h3>Collaborative Intelligence</h3>
+                <p>We foster environments where human intuition and artificial intelligence co-create solutions to civilization's most pressing challenges.</p>
+            </div>
 
-                <div class="principle-card">
-                    <h3 class="principle-title">Ethical Innovation</h3>
-                    <p class="principle-desc">
-                        We prioritize safety, transparency, and accountability, considering long-term consequences 
-                        while maintaining alignment with human values and wellbeing.
-                    </p>
-                </div>
+            <div class="principle-card">
+                <div class="principle-icon">⚖️</div>
+                <h3>Ethical Innovation</h3>
+                <p>We commit to developing technology that aligns with human values, promotes equity, and safeguards individual dignity.</p>
+            </div>
 
-                <div class="principle-card">
-                    <h3 class="principle-title">Global Stewardship</h3>
-                    <p class="principle-desc">
-                        We address civilization-level challenges through coordinated action, balancing technological 
-                        progress with environmental sustainability and promoting global cooperation.
-                    </p>
-                </div>
+            <div class="principle-card">
+                <div class="principle-icon">🌍</div>
+                <h3>Global Stewardship</h3>
+                <p>We ensure our innovations contribute to sustainable global development and the long-term flourishing of all humanity.</p>
             </div>
         </section>
 
         <section class="cta-section">
-            <h2 class="cta-title">Join the Movement</h2>
-            <p class="cta-subtitle">
-                Be part of the next chapter in human civilization's story
-            </p>
-            <a href="https://github.com/simbiot-ai/-4916758271-public" class="cta-button">
-                View Our Work
+            <a href="https://github.com/shkor42/-4916758271-public" class="cta-button">
+                Join Our Mission on GitHub
             </a>
         </section>
 
-        <footer class="footer">
-            <p>
-                © 2025 test-droup23 | 
-                <a href="https://github.com/simbiot-ai/-4916758271-public/constitution.md">Constitution</a> | 
-                <a href="https://github.com/simbiot-ai/-4916758271-public">GitHub</a>
-            </p>
+        <footer>
+            <p>&copy; 2025 test-droup23 | Building a future where technology and humanity achieve their greatest synergy</p>
+            <div class="footer-links">
+                <a href="https://github.com/shkor42/-4916758271-public/blob/main/constitution.md">Constitution</a>
+                <a href="https://github.com/shkor42/-4916758271-public">GitHub Repository</a>
+            </div>
         </footer>
     </div>
 </body>
